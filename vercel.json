@@ -4,6 +4,6 @@
     { "src": "/loop", "dest": "/app.py" }
   ],
   "build": {
-    "command": "python app.py"
+    "command": "flask run"
   }
 }
