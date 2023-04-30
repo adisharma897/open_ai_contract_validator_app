@@ -10,7 +10,7 @@ from sentry_sdk.integrations.flask import FlaskIntegration
 
 
 sentry_sdk.init(
-    dsn=os.environ('SENTRY_DSN'), integrations=[FlaskIntegration()]
+    dsn=os.environ['SENTRY_DSN'], integrations=[FlaskIntegration()]
 )
 
 
