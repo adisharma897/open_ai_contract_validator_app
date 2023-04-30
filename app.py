@@ -44,8 +44,9 @@ def extract_summary():
 
     completion_text = contract_text + static_text_summary
     
-    total_tokens = 4096
-    response_tokens = total_tokens - calculate_tokens(completion_text, model_summary)
+    #total_tokens = 4096
+    #response_tokens = total_tokens - calculate_tokens(completion_text, model_summary)
+    response_tokens=1000
     
 
     r = openai.Completion.create(
@@ -73,8 +74,9 @@ def extract_loop_holes():
 
     completion_text = contract_text + static_text_loop
     
-    total_tokens = 4096
-    response_tokens = total_tokens - calculate_tokens(completion_text, model_loop)
+    #total_tokens = 4096
+    #response_tokens = total_tokens - calculate_tokens(completion_text, model_loop)
+    response_tokens=1000
     
 
     r = openai.Completion.create(
