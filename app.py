@@ -5,6 +5,15 @@ import tiktoken
 from flask import Flask
 from flask import request
 
+import sentry_sdk
+from sentry_sdk.integrations.flask import FlaskIntegration
+
+
+sentry_sdk.init(
+    dsn=os.environ('SENTRY_DSN'), integrations=[FlaskIntegration()]
+)
+
+
 app = Flask(__name__)
 
 openai.organization = os.environ['open_ai_organization']
