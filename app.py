@@ -1,6 +1,6 @@
 import os
 import openai
-import tiktoken
+#import tiktoken
 
 from flask import Flask
 from flask import request
@@ -27,8 +27,9 @@ static_text_loop = os.environ['static_text_loop']
 
 
 def calculate_tokens(text, model):
-    enc = tiktoken.encoding_for_model(model)
-    return len(enc.encode(text))
+    #enc = tiktoken.encoding_for_model(model)
+    #return len(enc.encode(text))
+    return len(text)
 
 @app.route('/')
 def home():
