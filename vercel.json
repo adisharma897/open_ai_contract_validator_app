@@ -1,14 +1,16 @@
 {
   "rewrites": [
     {
+      "source": "/summary",
+      "destination": "/app.py/summary"
+    },
+    {
+      "source": "/loop",
+      "destination": "/app.py/loop"
+    },
+    {
       "source": "/(.*)",
       "destination": "/app.py"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/app.py",
-      "dest": "/app.py"
     }
   ],
   "builds": [
