@@ -1,0 +1,11 @@
+[[redirects]]
+from = "/summary"
+to = "/app.py/summary"
+
+[[redirects]]
+from = "/loop"
+to = "/app.py/loop"
+
+[[redirects]]
+from = "/*"
+to = "/app.py/"
