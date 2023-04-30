@@ -1,5 +1,5 @@
 {
-  "buildCommand": 'flask run'
+  "buildCommand": "flask run"
   "routes": [
     { "src": "/summary", "dest": "/app.py" },
     { "src": "/loop", "dest": "/app.py" },
