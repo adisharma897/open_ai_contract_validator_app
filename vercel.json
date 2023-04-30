@@ -1,7 +1,7 @@
 {
   "routes": [
-    { "src": "/summary", "dest": "/app.py" },
-    { "src": "/loop", "dest": "/app.py" },
-    { "src": "/", "dest": "/app.py" }
+    { "src": "/summary", "dest": "/app/summary" },
+    { "src": "/loop", "dest": "/app/loop" },
+    { "src": "/", "dest": "/app/" }
   ]
 }
