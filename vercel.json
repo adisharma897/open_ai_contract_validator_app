@@ -1,5 +1,4 @@
 {
-  "buildCommand": "flask run",
   "routes": [
     { "source": "/(.*)", "destination": "/app" }
   ]
