@@ -64,7 +64,7 @@ def extract_summary():
 
 
 @app.route("/loop_holes", methods = ['POST'])
-def extract_summary():
+def extract_loop_holes():
 
     contract_text = request.form.get('contract_text', None)
 
