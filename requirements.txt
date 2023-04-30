@@ -2,3 +2,4 @@ openai
 Flask
 sentry-sdk
 gunicorn
+tiktoken
