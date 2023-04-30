@@ -21,9 +21,9 @@ def calculate_tokens(text, model):
     enc = tiktoken.encoding_for_model(model)
     return len(enc.encode(text))
 
-@app.route("/", methods = ['GET'])
-def main():
-    return 'You are here'
+@app.route('/')
+def home():
+    return 'Hello, World!'
 
 @app.route("/summary", methods = ['POST'])
 def extract_summary():
